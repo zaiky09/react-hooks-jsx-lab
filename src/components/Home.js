@@ -1,15 +1,16 @@
 import React from "react";
 import { name, city } from "../data/data.js";
 
+const hStyle ={
+  color: 'firebrick'
+};
+
 function Home() {
 
-  const divStyle ={
-    color: 'firebrick'
-  };
   // update the JSX being returned!
   return (
     <div id="home">
-      <h1 style={divStyle}>{name} is a Web Developer from {city}</h1>
+      <h1 style={hStyle}>{name} is a Web Developer from {city}</h1>
     </div>
   );
 }
